@@ -7,9 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  <title>Document</title>
+  <title>Авторизация</title>
 </head>
-
 <body class="no-scroll">
   <div class="page">
     <div class="wrapper">
@@ -17,7 +16,7 @@
         <div class="container header__container">
           <div class="header__row">
             <div class="header__col">
-              <button class="btn-reset header__burger" type="button">
+              <button class="btn-reset header__burger" type="button" data-menu-btn="nav">
                 <span class="header__burger-line"></span>
               </button>
               <a class="header__logo" href="#">
@@ -69,7 +68,7 @@
             <div class="search">
               <input class="search__input" type="text" placeholder="Поиск промокода">
             </div>
-            <button class="btn-reset suppler">
+            <button class="btn-reset suppler" data-menu-btn="category">
               <svg class="suppler__arrow">
                 <use xlink:href="./images/sprite.svg#arrow"></use>
               </svg>
@@ -129,7 +128,7 @@
           </div>
         </div>
         <div class="header__menu menu">
-          <div class="menu__container">
+          <div class="menu__container" data-menu="category">
             <div class="container">
               <div class="menu__body">
                 <div class="menu__items">
@@ -391,14 +390,119 @@
               </div>
             </div>
           </div>
+          <div class="menu__container" data-menu="nav">
+            <div class="container">
+              <div class="menu__body">
+                <nav class="menu__nav nav">
+                  <div class="nav__col">
+                    <div class="nav__title">Условия использования</div>
+                    <ul class="nav__list">
+                      <li class="nav__item">
+                        <a class="nav__link" href="#">Правила поведения на сайте</a>
+                      </li>
+                      <li class="nav__item">
+                        <a class="nav__link" href="#">Пользовательское соглашение</a>
+                      </li>
+                      <li class="nav__item">
+                        <a class="nav__link" href="#">Политика конфиденциальности</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="nav__col">
+                    <div class="nav__title">Полезное</div>
+                    <ul class="nav__list">
+                      <li class="nav__item">
+                        <a class="nav__link" href="#">Как это работает?</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="nav__col">
+                    <div class="nav__title">О нас</div>
+                    <ul class="nav__list">
+                      <li class="nav__item">
+                        <a class="nav__link" href="#">О сообществе</a>
+                      </li>
+                      <li class="nav__item">
+                        <a class="nav__link" href="#">История</a>
+                      </li>
+                      <li class="nav__item">
+                        <a class="nav__link" href="#">Наша команда</a>
+                      </li>
+                      <li class="nav__item">
+                        <a class="nav__link" href="#">Связаться с нами</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
         </div>
       </header> <!-- header -->
-      <div class="site-container">
-        <div class="site-container__container container">
-          
+      <div class="site-container sign-in">
+        <div class="site-container__container container sign-in__container">
+          <div class="sign-in__inner">
+            <div class="sign-in__box">
+              <h3 class="sign-in__title">Войти через социальные сети</h3>
+              <ul class="sign-in__social social-sign-in">
+                <li class="social-sign-in__item">
+                  <a class="social-sign-in__link" href="#">
+                    <svg class="social-sign-in__link-icon">
+                      <use xlink:href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                    <span>Войти через Facebook</span>
+                  </a>
+                </li>
+                <li class="social-sign-in__item">
+                  <a class="social-sign-in__link" href="#">
+                    <svg class="social-sign-in__link-icon">
+                      <use xlink:href="./images/sprite.svg#google"></use>
+                    </svg>
+                    <span>Войти через Google</span>
+                  </a>
+                </li>
+                <li class="social-sign-in__item">
+                  <a class="social-sign-in__link" href="#">
+                    <svg class="social-sign-in__link-icon">
+                      <use xlink:href="./images/sprite.svg#apple"></use>
+                    </svg>
+                    <span>Войти через Apple</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="sign-in__box">
+              <h3 class="sign-in__title">Войти через социальные сети</h3>
+              <form class="sign-in__form form-sign-in" action="post">
+                <div class="form-sign-in__body">
+                  <div class="form-sign-in__group">
+                    <label class="form-sign-in__label" for="email">Имя пользователя или адрес электронной почты</label>
+                    <input class="form-sign-in__input" type="email" name="email" id="email" placeholder="exemple@gmail.com">
+                  </div>
+                  <div class="form-sign-in__group">
+                    <label class="form-sign-in__label" for="password">Пароль</label>
+                    <input class="form-sign-in__input" type="password" name="password" id="password" placeholder="Ваш пароль">
+                  </div>
+                  <a class="form-sign-in__link" href="">Забыли пароль?</a>
+                  <div class="form-sign-in__checkbox">
+                    <input class="form-sign-in__checkbox-input" type="checkbox" id="checkbox">
+                    <label class="form-sign-in__checkbox-label" for="checkbox">
+                      <svg class="form-sign-in__checkbox-icon">
+                        <use xlink:href="./images/sprite.svg#check"></use>
+                      </svg>
+                      <span class="form-sign-in__checkbox-text">Запомнить меня на этом устройстве</span>
+                    </label>  
+                  </div>
+                  <div class="form-sign-in__btns">
+                    <button class="btn-reset btn btn-primery form-sign-in__btn" type="submit">Войти</button>
+                    <a class="btn btn-secondery" href="#">Зарегестрироваться</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div> <!-- main -->
   <script src="./js/main.js"></script>
 </body>
-
 </html>

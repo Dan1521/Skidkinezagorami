@@ -409,6 +409,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 20px 31px;
+  font-family: inherit;
+  font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   border: 2px solid var(--color-dark);
@@ -754,9 +756,7 @@ body {
 }
 
 .btn {
-  width: 100%;
   text-align: center;
-  padding: 8px 20px;
   border-radius: 9px;
 }
 
@@ -766,6 +766,7 @@ body {
   font-size: 20px;
   line-height: 26px;
   color: var(--color-white);
+  padding: 10px 20px;
   background-color: var(--color-green-3);
   -webkit-transition: background-color 0.1s ease-in;
   transition: background-color 0.1s ease-in;
@@ -791,6 +792,7 @@ body {
           justify-content: center;
   font-size: 18px;
   line-height: 25px;
+  padding: 8px 20px;
   color: var(--color-green-3);
   background-color: var(--color-white);
   border: 2px solid var(--color-green-3);
@@ -1125,5 +1127,192 @@ body {
 .comment__text {
   font-size: 24px;
   line-height: 31px;
+}
+
+.sign-in {
+  padding-top: 92px;
+  padding-bottom: 112px;
+}
+
+.sign-in__inner {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.sign-in__box:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.sign-in__title {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 44px;
+  margin-bottom: 25px;
+}
+
+.social-sign-in__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.social-sign-in__link {
+  font-size: 24px;
+  line-height: 31px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 14px 20px 14px 28px;
+  border-radius: 9px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-black);
+}
+
+.social-sign-in__link-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 18px;
+}
+
+.form-sign-in__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-sign-in__group:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.form-sign-in__label {
+  font-size: 24px;
+  line-height: 31px;
+  margin-bottom: 15px;
+}
+
+.form-sign-in__input {
+  height: 51px;
+  font-size: 24px;
+  line-height: 31px;
+  padding: 10px 20px;
+  border-radius: 9px;
+  border: 2px solid var(--color-dark);
+  background-color: var(--color-white);
+}
+
+.form-sign-in__input::-webkit-input-placeholder {
+  color: var(--color-gray);
+}
+
+.form-sign-in__input:-ms-input-placeholder {
+  color: var(--color-gray);
+}
+
+.form-sign-in__input::-ms-input-placeholder {
+  color: var(--color-gray);
+}
+
+.form-sign-in__input::placeholder {
+  color: var(--color-gray);
+}
+
+.form-sign-in__checkbox {
+  position: relative;
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-sign-in__checkbox-input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+}
+
+.form-sign-in__checkbox-text {
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.form-sign-in__checkbox-label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-sign-in__checkbox-label::before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+  display: inline-block;
+  border-radius: 9px;
+  border: 2px solid var(--color-blue);
+  -webkit-transition: background-color 0.05s linear;
+  transition: background-color 0.05s linear;
+}
+
+.form-sign-in__checkbox-icon {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 0;
+}
+
+.form-sign-in__link {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--color-blue);
+  margin-top: 15px;
+}
+
+.form-sign-in__link:hover {
+  text-decoration: underline;
+}
+
+.form-sign-in__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 45px;
+}
+
+.form-sign-in__btn:nth-child(1) {
+  margin-right: 15px;
+}
+
+.form-sign-in__checkbox-input:checked + .form-sign-in__checkbox-label::before {
+  background-color: var(--color-blue-2);
+}
+
+.form-sign-in__checkbox-input:checked + .form-sign-in__checkbox-label .form-sign-in__checkbox-icon {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
