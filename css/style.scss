@@ -163,6 +163,8 @@ img {
   --color-green: #158908;
   --color-green-2: #1DA60C;
   --color-green-3: #40C32E;
+  --color-green-4: #67E553;
+  --color-green-5: #E1FFCC;
   --color-green-light: #F5FFEE;
   --color-dark: #555555;
   --color-white-2: #FAFAFA;
@@ -252,13 +254,14 @@ body{
 }
 .avtoriz{
   display: flex;
-  background-color: #E1FFCC;
+  background-color: var(--color-green-5);
   border-radius: 9px;
   padding: 10px 20px;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
   color: var(--color-black);
+  transition: background-color 0.1s ease-in-out;
   &__icon{
     width: 24px;
     height: 24px;
@@ -266,6 +269,9 @@ body{
   }
   b{
     margin: 0 15px;
+  }
+  &:hover{
+    background-color: var(--color-green-light);
   }
 }
 .social{
@@ -281,12 +287,13 @@ body{
     svg {
         &>* {
           fill: var(--color-green-2);
+          transition: fill 0.1s ease-in-out;
         }
       }
     &:hover{
       svg{
         &>*{
-          fill: var(--color-green-3);
+          fill: var(--color-black);
         }
       }
     }
@@ -306,8 +313,13 @@ body{
     padding: 15px 35px;
     border: 2px solid var(--color-green);
     border-radius: 9px;
+    outline: none;
+    transition: border-color 0.1 ease-in;
     &::placeholder{
       color: var(--color-gray);
+    }
+    &:focus{
+      border-color: var(--color-green-3);
     }
   }
 }
@@ -368,6 +380,7 @@ body{
     }
   }
   &__container{
+    width: 100%;
     max-height: 0;
     overflow: hidden;
     position: absolute;
@@ -376,8 +389,9 @@ body{
     z-index: 5;
     top: 0;
     transition: max-height 0.45s ease-in-out, opacity 0.2s ease-in-out,
-      visibility 0.2s ease-in-out;
+    visibility 0.2s ease-in-out;
     background-color: var(--color-white);
+    box-shadow: 0px 101px 88px 6px rgba(0, 0, 0, 0.13)
   }
 
   &__title{
@@ -770,6 +784,9 @@ body{
     margin-right: 30px;
     border-radius: 9px;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     img{
       object-fit: cover;
       object-position: center;

@@ -162,6 +162,8 @@ img {
   --color-green: #158908;
   --color-green-2: #1DA60C;
   --color-green-3: #40C32E;
+  --color-green-4: #67E553;
+  --color-green-5: #E1FFCC;
   --color-green-light: #F5FFEE;
   --color-dark: #555555;
   --color-white-2: #FAFAFA;
@@ -283,13 +285,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #E1FFCC;
+  background-color: var(--color-green-5);
   border-radius: 9px;
   padding: 10px 20px;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
   color: var(--color-black);
+  -webkit-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
 }
 
 .avtoriz__icon {
@@ -300,6 +304,10 @@ body {
 
 .avtoriz b {
   margin: 0 15px;
+}
+
+.avtoriz:hover {
+  background-color: var(--color-green-light);
 }
 
 .social {
@@ -318,10 +326,12 @@ body {
 
 .social__link svg > * {
   fill: var(--color-green-2);
+  -webkit-transition: fill 0.1s ease-in-out;
+  transition: fill 0.1s ease-in-out;
 }
 
 .social__link:hover svg > * {
-  fill: var(--color-green-3);
+  fill: var(--color-black);
 }
 
 .search {
@@ -339,6 +349,9 @@ body {
   padding: 15px 35px;
   border: 2px solid var(--color-green);
   border-radius: 9px;
+  outline: none;
+  -webkit-transition: border-color 0.1 ease-in;
+  transition: border-color 0.1 ease-in;
 }
 
 .search__input::-webkit-input-placeholder {
@@ -355,6 +368,10 @@ body {
 
 .search__input::placeholder {
   color: var(--color-gray);
+}
+
+.search__input:focus {
+  border-color: var(--color-green-3);
 }
 
 .suppler {
@@ -430,6 +447,7 @@ body {
 }
 
 .menu__container {
+  width: 100%;
   max-height: 0;
   overflow: hidden;
   position: absolute;
@@ -440,6 +458,8 @@ body {
   -webkit-transition: max-height 0.45s ease-in-out, opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
   transition: max-height 0.45s ease-in-out, opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
   background-color: var(--color-white);
+  -webkit-box-shadow: 0px 101px 88px 6px rgba(0, 0, 0, 0.13);
+          box-shadow: 0px 101px 88px 6px rgba(0, 0, 0, 0.13);
 }
 
 .menu__title {
@@ -919,6 +939,15 @@ body {
   margin-right: 30px;
   border-radius: 9px;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .modal__img img {
