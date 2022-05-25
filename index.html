@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  <title>Document</title>
+  <title>Skidkinezagorami</title>
 </head>
 
 <body class="no-scroll">
@@ -17,7 +16,7 @@
         <div class="container header__container">
           <div class="header__row">
             <div class="header__col">
-              <button class="btn-reset header__burger" type="button">
+              <button class="btn-reset header__burger" type="button" data-menu-btn="nav">
                 <span class="header__burger-line"></span>
               </button>
               <a class="header__logo" href="#">
@@ -69,7 +68,7 @@
             <div class="search">
               <input class="search__input" type="text" placeholder="Поиск промокода">
             </div>
-            <button class="btn-reset suppler">
+            <button class="btn-reset suppler" data-menu-btn="category">
               <svg class="suppler__arrow">
                 <use xlink:href="./images/sprite.svg#arrow"></use>
               </svg>
@@ -129,7 +128,7 @@
           </div>
         </div>
         <div class="header__menu menu">
-          <div class="menu__container">
+          <div class="menu__container" data-menu="category">
             <div class="container">
               <div class="menu__body">
                 <div class="menu__items">
@@ -391,6 +390,53 @@
               </div>
             </div>
           </div>
+          <div class="menu__container" data-menu="nav">
+            <div class="container">
+              <div class="menu__body">
+                <nav class="menu__nav nav">
+                  <div class="nav__col">
+                    <div class="nav__title">Условия использования</div>
+                    <ul class="nav__list">
+                      <li class="nav__item">
+                        <a class="nav__link" href="#">Правила поведения на сайте</a>
+                      </li>
+                      <li class="nav__item">
+                        <a class="nav__link" href="#">Пользовательское соглашение</a>
+                      </li>
+                      <li class="nav__item">
+                        <a class="nav__link" href="#">Политика конфиденциальности</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="nav__col">
+                    <div class="nav__title">Полезное</div>
+                    <ul class="nav__list">
+                      <li class="nav__item">
+                        <a class="nav__link" href="#">Как это работает?</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="nav__col">
+                    <div class="nav__title">О нас</div>
+                    <ul class="nav__list">
+                      <li class="nav__item">
+                        <a class="nav__link" href="#">О сообществе</a>
+                      </li>
+                      <li class="nav__item">
+                        <a class="nav__link" href="#">История</a>
+                      </li>
+                      <li class="nav__item">
+                        <a class="nav__link" href="#">Наша команда</a>
+                      </li>
+                      <li class="nav__item">
+                        <a class="nav__link" href="#">Связаться с нами</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
         </div>
       </header> <!-- header -->
       <div class="site-container">
@@ -402,9 +448,13 @@
                   <div class="card__img">
                     <img src="./images/card/ozon.jpg" alt="ozon">
                     <ul class="card__tags">
-                      <li class="card__tag card__tag--pink">🔥HOT</li>
-                      <li class="card__tag card__tag--blue">💣 BOOM</li>
-                    </ul>
+                      <li class="card__tag card__tag--pink">
+                        <a class="" href="#">🔥HOT</a>
+                      </li>
+                      <li class="card__tag card__tag--blue">
+                        <a href="#">💣 BOOM</a>
+                      </li>
+                    </ul>  
                   </div>
                   <div class="card__content">
                     <div class="card__title">Премиум подписка бесплатно 2 месяца</div>
@@ -466,8 +516,12 @@
                   <div class="card__img">
                     <img src="./images/card/m-video.jpg" alt="ozon">
                     <ul class="card__tags">
-                      <li class="card__tag card__tag--pink">🔥HOT</li>
-                      <li class="card__tag card__tag--blue">💣 BOOM</li>
+                      <li class="card__tag card__tag--pink">
+                        <a class="" href="#">🔥HOT</a>
+                      </li>
+                      <li class="card__tag card__tag--blue">
+                        <a href="#">💣 BOOM</a>
+                      </li>
                     </ul>
                   </div>
                   <div class="card__content">
@@ -527,8 +581,12 @@
                   <div class="card__img">
                     <img src="./images/card/duck.jpg" alt="ozon">
                     <ul class="card__tags">
-                      <li class="card__tag card__tag--pink">🔥HOT</li>
-                      <li class="card__tag card__tag--blue">💣 BOOM</li>
+                      <li class="card__tag card__tag--pink">
+                        <a class="" href="#">🔥HOT</a>
+                      </li>
+                      <li class="card__tag card__tag--blue">
+                        <a href="#">💣 BOOM</a>
+                      </li>
                     </ul>
                   </div>
                   <div class="card__content">
@@ -795,8 +853,10 @@
                     <div class="card__img">
                       <img src="./images/card/apteka.jpg" alt="apteka.ru">
                       <ul class="card__tags">
-                        <li class="card__tag card__tag--pink">🔥HOT</li>
-                      </ul>
+                      <li class="card__tag card__tag--pink">
+                        <a class="" href="#">🔥HOT</a>
+                      </li>
+                    </ul>
                     </div>
                     <div class="card__content">
                       <div class="card__title">Аптека.ру 3% скидка</div>
@@ -932,8 +992,10 @@
                     <div class="card__img">
                       <img src="./images/card/apteka.jpg" alt="apteka.ru">
                       <ul class="card__tags">
-                        <li class="card__tag card__tag--pink">🔥HOT</li>
-                      </ul>
+                      <li class="card__tag card__tag--pink">
+                        <a class="" href="#">🔥HOT</a>
+                      </li>
+                    </ul>
                     </div>
                     <div class="card__content">
                       <div class="card__title">Аптека.ру 3% скидка</div>
@@ -1001,8 +1063,10 @@
                     <div class="card__img">
                       <img src="./images/card/apteka.jpg" alt="apteka.ru">
                       <ul class="card__tags">
-                        <li class="card__tag card__tag--pink">🔥HOT</li>
-                      </ul>
+                      <li class="card__tag card__tag--pink">
+                        <a class="" href="#">🔥HOT</a>
+                      </li>
+                    </ul>
                     </div>
                     <div class="card__content">
                       <div class="card__title">Аптека.ру 3% скидка</div>
@@ -1138,8 +1202,10 @@
                     <div class="card__img">
                       <img src="./images/card/apteka.jpg" alt="apteka.ru">
                       <ul class="card__tags">
-                        <li class="card__tag card__tag--pink">🔥HOT</li>
-                      </ul>
+                      <li class="card__tag card__tag--pink">
+                        <a class="" href="#">🔥HOT</a>
+                      </li>
+                    </ul>
                     </div>
                     <div class="card__content">
                       <div class="card__title">Аптека.ру 3% скидка</div>
@@ -1207,8 +1273,10 @@
                     <div class="card__img">
                       <img src="./images/card/apteka.jpg" alt="apteka.ru">
                       <ul class="card__tags">
-                        <li class="card__tag card__tag--pink">🔥HOT</li>
-                      </ul>
+                      <li class="card__tag card__tag--pink">
+                        <a class="" href="#">🔥HOT</a>
+                      </li>
+                    </ul>
                     </div>
                     <div class="card__content">
                       <div class="card__title">Аптека.ру 3% скидка</div>
@@ -1344,8 +1412,10 @@
                     <div class="card__img">
                       <img src="./images/card/apteka.jpg" alt="apteka.ru">
                       <ul class="card__tags">
-                        <li class="card__tag card__tag--pink">🔥HOT</li>
-                      </ul>
+                      <li class="card__tag card__tag--pink">
+                        <a class="" href="#">🔥HOT</a>
+                      </li>
+                    </ul>
                     </div>
                     <div class="card__content">
                       <div class="card__title">Аптека.ру 3% скидка</div>
@@ -1456,43 +1526,49 @@
             </ul>
           </div>
           <div class="footer__col">
-            <div class="footer__title">Условия использования</div>
-            <ul class="footer-nav">
-              <li class="footer-nav__item">
-                <a class="footer-nav__link" href="#">Правила поведения на сайте</a>
-              </li>
-              <li class="footer-nav__item">
-                <a class="footer-nav__link" href="#">Пользовательское соглашение</a>
-              </li>
-              <li class="footer-nav__item">
-                <a class="footer-nav__link" href="#">Политика конфиденциальности</a>
-              </li>
-            </ul>
+            <div class="nav__col">
+              <div class="nav__title">Условия использования</div>
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Правила поведения на сайте</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Пользовательское соглашение</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Политика конфиденциальности</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="footer__col">
-            <div class="footer__title">Полезное</div>
-            <ul class="footer-nav">
-              <li class="footer-nav__item">
-                <a class="footer-nav__link" href="#">Как это работает?</a>
-              </li>
-            </ul>
+            <div class="nav__col">
+              <div class="nav__title">Полезное</div>
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Как это работает?</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="footer__col">
-            <div class="footer__title">О нас</div>
-            <ul class="footer-nav">
-              <li class="footer-nav__item">
-                <a class="footer-nav__link" href="#">О сообществе</a>
-              </li>
-              <li class="footer-nav__item">
-                <a class="footer-nav__link" href="#">История</a>
-              </li>
-              <li class="footer-nav__item">
-                <a class="footer-nav__link" href="#">Наша команда</a>
-              </li>
-              <li class="footer-nav__item">
-                <a class="footer-nav__link" href="#">Связаться с нами</a>
-              </li>
-            </ul>
+            <div class="nav__col">
+              <div class="nav__title">О нас</div>
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="#">О сообществе</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">История</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Наша команда</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Связаться с нами</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </footer> <!-- footer -->
