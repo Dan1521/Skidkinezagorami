@@ -218,6 +218,9 @@ body{
       margin-top: 5px;
     }
   }
+  &__social{
+    margin-left: 60px;
+  }
   &__row{
     display: flex;
     align-items: center;
@@ -254,7 +257,7 @@ body{
 }
 .social{
   display: flex;
-  margin-left: 60px;
+  
   &__item{
     &:not(:last-child){
       margin-right: 30px;

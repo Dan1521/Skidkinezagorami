@@ -229,6 +229,10 @@ body {
   margin-top: 5px;
 }
 
+.header__social {
+  margin-left: 60px;
+}
+
 .header__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -281,7 +285,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 60px;
 }
 
 .social__item:not(:last-child) {
