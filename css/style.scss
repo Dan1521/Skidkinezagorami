@@ -161,6 +161,7 @@ img {
   --color-black: #000000;
   --color-gray: #878787;
   --color-green: #158908;
+  --color-green-2: #1DA60C;
   --color-green-3: #40C32E;
   --color-green-light: #F5FFEE;
   --color-dark: #555555;
@@ -179,9 +180,7 @@ body{
   font-size: 16px;
   line-height: 19px;
   color: var(--color-black);
-  // &.no-scroll{
-  //   overflow: hidden;
-  // }
+
 }
 .wrapper{
   position: relative;
@@ -277,6 +276,21 @@ body{
       margin-right: 30px;
     }
   }
+  &__link{
+    display: inline-block;
+    svg {
+        &>* {
+          fill: var(--color-green-2);
+        }
+      }
+    &:hover{
+      svg{
+        &>*{
+          fill: var(--color-green-3);
+        }
+      }
+    }
+  }
 }
 
 .search{
@@ -302,12 +316,20 @@ body{
   display: flex;
   align-items: center;
   padding: 20px 31px;
+  font-size: 16px;
+  line-height: 19px;
   border: 2px solid var(--color-dark);
   border-radius: 9px;
   &__arrow{
     width: 23px;
     height: 18px;
     margin-right: 10px;
+    transition: transform 0.15s ease-in;
+  }
+  &--active{
+    .suppler__arrow{
+      transform: rotate(180deg);
+    }
   }
 }
 .category{
@@ -333,6 +355,80 @@ body{
       font-size: 16px;
       line-height: 21px;
       color: var(--color-black);
+    }
+  }
+}
+
+.menu{
+  position: relative;
+  &--open{
+    .menu__container{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  &__container{
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 5;
+    top: 0;
+    transition: max-height 0.45s ease-in-out, opacity 0.2s ease-in-out,
+      visibility 0.2s ease-in-out;
+    background-color: var(--color-white);
+  }
+
+  &__title{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 20px;
+  }
+  &__body{
+    padding: 60px 66px 88px 66px;
+  }
+  &__items{
+    column-count: 3;
+    column-gap: 100px;
+  }
+  &__item{
+    break-inside: avoid-column;
+    margin-bottom: 60px;
+  }
+  &-list{
+    padding-left: 10px;
+    &__item{
+      
+      &:not(:last-child){
+        margin-bottom: 15px;
+      } 
+    }
+    &__link{
+      font-size: 24px;
+      line-height: 31px;
+      position: relative;
+      
+        &::after {
+          content: "";
+          width: 100%;
+          height: 1px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background-color: currentColor;
+          transform: scaleX(0);
+          transform-origin: left;
+          transition: transform 0.15s ease-in-out;
+        }
+      
+        &:hover {
+          &::after {
+            transform: scaleX(1);
+          }
+      
+        } 
     }
   }
 }
