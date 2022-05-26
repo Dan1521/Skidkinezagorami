@@ -21,10 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
   })
   modals.forEach((modal) => {
     modal.addEventListener('click', (event) => {
-      // Кнопка закрыти текущего окна
-      let modalClose = modal.querySelector('.modal__close');
 
-      if (modal.closest('.modal') || modal.closest(modalClose)) {
+      if (event.target.classList.contains('modal__inner') || event.target.classList.contains('modal__close')) {
         modal.classList.remove('modal--open')
       }
     })
@@ -61,29 +59,15 @@ document.addEventListener('DOMContentLoaded', () => {
     
   })
 
-  // burger.addEventListener('click', (event) => {
-  //   if (!burger.classList.contains('burger-active')) {
-  //     menuNav.classList.add('menu--open');
-  //     burger.classList.add('burger-active')
-  //     menuNav.style.maxHeight = menuNavHeight + 'px';
-  //   } else {
-  //     menuNav.classList.remove('menu--open');
-  //     burger.classList.remove('burger-active')
-  //     menuNav.style.maxHeight = 0;
-  //   }
-  // })
-
-  // suppler.addEventListener('click', (event) => {
-  //   event.currentTarget.classList.toggle('suppler--active');
-
-  //   if (!menuCat.classList.contains('menu--open')) {
-  //     menuCat.classList.add('menu--open');
-  //     menuCat.style.maxHeight = menuCatHeight + 'px';
-  //   } else {
-  //     menu.classList.remove('menu--open');
-  //     menuCat.style.maxHeight = 0;
-  //   }
-  // })
+  let btnClipboard = new ClipboardJS('.btn-clipboard', {  //инициализация кнопки копирования промокодов
+    text: function (trigger) {
+      return trigger.getAttribute('data-clipboard-text');
+    },
+  })
+  btnClipboard.on('success', function (e) {
+    e.trigger.classList.add('succses');
+    alert("Текст скопирован:" + e.text)
+  });
 
 
 

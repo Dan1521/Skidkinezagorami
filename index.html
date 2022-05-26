@@ -68,6 +68,7 @@
             <div class="search">
               <input class="search__input" type="text" placeholder="Поиск промокода">
             </div>
+
             <button class="btn-reset suppler" data-menu-btn="category">
               <svg class="suppler__arrow">
                 <use xlink:href="./images/sprite.svg#arrow"></use>
@@ -495,8 +496,8 @@
                       к сервису KION</div>
                     <div class="card__bottom">
                       <div class="card__btns">
-                        <button class="btn-reset btn btn-primery card__btn">Открыть промокод</button>
-                        <button class="btn-reset btn btn-secondery card__btn">
+                        <button class="btn-reset btn btn-primery card__btn" data-pop="1">Открыть промокод</button>
+                        <button class="btn-reset btn btn-secondery card__btn btn-clipboard" data-clipboard-text="rrr">
                           <svg class="copy-icon link-secondary__copy">
                             <use xlink:href="./images/sprite.svg#copy"></use>
                           </svg>
@@ -560,8 +561,8 @@
                     при покупке от 15000 рублей</div>
                     <div class="card__bottom">
                       <div class="card__btns">
-                        <button class="btn-reset btn btn-primery card__btn">Открыть промокод</button>
-                        <button class="btn-reset btn btn-secondery card__btn">
+                        <button class="btn-reset btn btn-primery card__btn" data-pop="2">Открыть промокод</button>
+                        <button class="btn-reset btn btn-secondery card__btn btn-clipboard" data-clipboard-text="rrr">
                           <svg class="copy-icon link-secondary__copy">
                             <use xlink:href="./images/sprite.svg#copy"></use>
                           </svg>
@@ -624,8 +625,8 @@
                     <div class="card__descr">Скидка 25% на первые 2 заказа (без минимальной суммы, распространяется на акционный товар)</div>
                     <div class="card__bottom">
                       <div class="card__btns">
-                        <button class="btn-reset btn btn-primery card__btn">Открыть промокод</button>
-                        <button class="btn-reset btn btn-secondery card__btn">
+                        <button class="btn-reset btn btn-primery card__btn" data-pop="1">Открыть промокод</button>
+                        <button class="btn-reset btn btn-secondery card__btn btn-clipboard" data-clipboard-text="rrr">
                           <svg class="copy-icon link-secondary__copy">
                             <use xlink:href="./images/sprite.svg#copy"></use>
                           </svg>
@@ -693,16 +694,15 @@
                               <path d="M1 11L6 6L1 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                           </a>
-                          <a class="link link-secondary" href="">
-                            <svg class="copy-icon link-secondary__copy" viewBox="0 0 24 24" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
+                          <button class="btn-reset link link-secondary card__link btn-clipboard" data-clipboard-text="eeeee">
+                            <svg class="copy-icon link-secondary__copy" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path
                                 d="M14 7V7C14 6.06812 14 5.60218 13.8478 5.23463C13.6448 4.74458 13.2554 4.35523 12.7654 4.15224C12.3978 4 11.9319 4 11 4H8C6.11438 4 5.17157 4 4.58579 4.58579C4 5.17157 4 6.11438 4 8V11C4 11.9319 4 12.3978 4.15224 12.7654C4.35523 13.2554 4.74458 13.6448 5.23463 13.8478C5.60218 14 6.06812 14 7 14V14"
                                 stroke="#158908" stroke-width="2" />
                               <rect x="10" y="10" width="10" height="10" rx="2" stroke="#158908" stroke-width="2" />
                             </svg>
                             <span>Скопировать</span>
-                          </a>
+                          </button>
                         </div>
                         <div class="card__info">
                           <div class="card__date">до 31 сентября 2022</div>
@@ -760,7 +760,7 @@
                               <path d="M1 11L6 6L1 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                           </a>
-                          <a class="link link-secondary" href="">
+                          <button class="btn-reset link link-secondary card__link btn-clipboard" data-clipboard-text="rrr">
                             <svg class="copy-icon link-secondary__copy" viewBox="0 0 24 24" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
                               <path
@@ -769,7 +769,7 @@
                               <rect x="10" y="10" width="10" height="10" rx="2" stroke="#158908" stroke-width="2" />
                             </svg>
                             <span>Скопировать</span>
-                          </a>
+                          </button>
                         </div>
                         <div class="card__info">
                           <div class="card__date">до 31 сентября 2022</div>
@@ -829,7 +829,7 @@
                               <path d="M1 11L6 6L1 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                           </a>
-                          <a class="link link-secondary" href="">
+                          <button class="btn-reset link link-secondary card__link btn-clipboard" data-clipboard-text="eeeee">
                             <svg class="copy-icon link-secondary__copy" viewBox="0 0 24 24" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
                               <path
@@ -838,7 +838,7 @@
                               <rect x="10" y="10" width="10" height="10" rx="2" stroke="#158908" stroke-width="2" />
                             </svg>
                             <span>Скопировать</span>
-                          </a>
+                          </button>
                         </div>
                         <div class="card__info">
                           <div class="card__date">Бессрочно</div>
@@ -900,7 +900,7 @@
                               <path d="M1 11L6 6L1 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                           </a>
-                          <a class="link link-secondary" href="">
+                          <button class="btn-reset link link-secondary card__link btn-clipboard" data-clipboard-text="eeeee">
                             <svg class="copy-icon link-secondary__copy" viewBox="0 0 24 24" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
                               <path
@@ -909,7 +909,7 @@
                               <rect x="10" y="10" width="10" height="10" rx="2" stroke="#158908" stroke-width="2" />
                             </svg>
                             <span>Скопировать</span>
-                          </a>
+                          </button>
                         </div>
                         <div class="card__info">
                           <div class="card__date">до 31 сентября 2022</div>
@@ -968,7 +968,7 @@
                               <path d="M1 11L6 6L1 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                           </a>
-                          <a class="link link-secondary" href="">
+                          <button class="btn-reset link link-secondary card__link btn-clipboard" data-clipboard-text="eeeee">
                             <svg class="copy-icon link-secondary__copy" viewBox="0 0 24 24" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
                               <path
@@ -977,7 +977,7 @@
                               <rect x="10" y="10" width="10" height="10" rx="2" stroke="#158908" stroke-width="2" />
                             </svg>
                             <span>Скопировать</span>
-                          </a>
+                          </button>
                         </div>
                         <div class="card__info">
                           <div class="card__date">Бессрочно</div>
@@ -1039,7 +1039,7 @@
                               <path d="M1 11L6 6L1 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                           </a>
-                          <a class="link link-secondary" href="">
+                          <button class="btn-reset link link-secondary card__link btn-clipboard" data-clipboard-text="eeeee">
                             <svg class="copy-icon link-secondary__copy" viewBox="0 0 24 24" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
                               <path
@@ -1048,7 +1048,7 @@
                               <rect x="10" y="10" width="10" height="10" rx="2" stroke="#158908" stroke-width="2" />
                             </svg>
                             <span>Скопировать</span>
-                          </a>
+                          </button>
                         </div>
                         <div class="card__info">
                           <div class="card__date">до 31 сентября 2022</div>
@@ -1110,7 +1110,7 @@
                               <path d="M1 11L6 6L1 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                           </a>
-                          <a class="link link-secondary" href="">
+                          <button class="btn-reset link link-secondary card__link btn-clipboard" data-clipboard-text="eeeee">
                             <svg class="copy-icon link-secondary__copy" viewBox="0 0 24 24" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
                               <path
@@ -1119,7 +1119,7 @@
                               <rect x="10" y="10" width="10" height="10" rx="2" stroke="#158908" stroke-width="2" />
                             </svg>
                             <span>Скопировать</span>
-                          </a>
+                          </button>
                         </div>
                         <div class="card__info">
                           <div class="card__date">до 31 сентября 2022</div>
@@ -1178,7 +1178,7 @@
                               <path d="M1 11L6 6L1 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                           </a>
-                          <a class="link link-secondary" href="">
+                          <button class="btn-reset link link-secondary card__link btn-clipboard" data-clipboard-text="eeeee">
                             <svg class="copy-icon link-secondary__copy" viewBox="0 0 24 24" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
                               <path
@@ -1187,7 +1187,7 @@
                               <rect x="10" y="10" width="10" height="10" rx="2" stroke="#158908" stroke-width="2" />
                             </svg>
                             <span>Скопировать</span>
-                          </a>
+                          </button>
                         </div>
                         <div class="card__info">
                           <div class="card__date">Бессрочно</div>
@@ -1249,7 +1249,7 @@
                               <path d="M1 11L6 6L1 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                           </a>
-                          <a class="link link-secondary" href="">
+                          <button class="btn-reset link link-secondary card__link btn-clipboard" data-clipboard-text="eeeee">
                             <svg class="copy-icon link-secondary__copy" viewBox="0 0 24 24" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
                               <path
@@ -1258,7 +1258,7 @@
                               <rect x="10" y="10" width="10" height="10" rx="2" stroke="#158908" stroke-width="2" />
                             </svg>
                             <span>Скопировать</span>
-                          </a>
+                          </button>
                         </div>
                         <div class="card__info">
                           <div class="card__date">до 31 сентября 2022</div>
@@ -1320,7 +1320,7 @@
                               <path d="M1 11L6 6L1 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                           </a>
-                          <a class="link link-secondary" href="">
+                          <button class="btn-reset link link-secondary card__link btn-clipboard" data-clipboard-text="eeeee">
                             <svg class="copy-icon link-secondary__copy" viewBox="0 0 24 24" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
                               <path
@@ -1329,7 +1329,7 @@
                               <rect x="10" y="10" width="10" height="10" rx="2" stroke="#158908" stroke-width="2" />
                             </svg>
                             <span>Скопировать</span>
-                          </a>
+                          </button>
                         </div>
                         <div class="card__info">
                           <div class="card__date">до 31 сентября 2022</div>
@@ -1388,7 +1388,7 @@
                               <path d="M1 11L6 6L1 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                           </a>
-                          <a class="link link-secondary" href="">
+                          <button class="btn-reset link link-secondary card__link btn-clipboard" data-clipboard-text="eeeee">
                             <svg class="copy-icon link-secondary__copy" viewBox="0 0 24 24" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
                               <path
@@ -1397,7 +1397,7 @@
                               <rect x="10" y="10" width="10" height="10" rx="2" stroke="#158908" stroke-width="2" />
                             </svg>
                             <span>Скопировать</span>
-                          </a>
+                          </button>
                         </div>
                         <div class="card__info">
                           <div class="card__date">Бессрочно</div>
@@ -1459,7 +1459,7 @@
                               <path d="M1 11L6 6L1 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                           </a>
-                          <a class="link link-secondary" href="">
+                          <button class="btn-reset link link-secondary card__link btn-clipboard" data-clipboard-text="eeeee">
                             <svg class="copy-icon link-secondary__copy" viewBox="0 0 24 24" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
                               <path
@@ -1468,7 +1468,7 @@
                               <rect x="10" y="10" width="10" height="10" rx="2" stroke="#158908" stroke-width="2" />
                             </svg>
                             <span>Скопировать</span>
-                          </a>
+                          </button>
                         </div>
                         <div class="card__info">
                           <div class="card__date">до 31 сентября 2022</div>
@@ -1573,7 +1573,7 @@
         </div>
       </footer> <!-- footer -->
       <div class="modal" data-modal="1">
-        <div class="modal__inner">
+        <div class="modal__inner r">
           <div class="modal__body">
               <button class="btn-reset modal__close">
                 <svg class="modal__close-icon">
@@ -2033,6 +2033,7 @@
       </div> <!-- modal #2 -->
     </div> <!-- wrapper -->
   </div> 
+  <script src="./js/clipboard.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>

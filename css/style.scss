@@ -719,6 +719,7 @@ body{
 
 }
 .link-secondary{
+  font-family: inherit;
   font-weight: 500;
   font-size: 20px;
   line-height: 26px;
@@ -846,6 +847,7 @@ body{
     &-icon{
       width: 24px;
       height: 24px;
+      pointer-events: none;
       transition: transform 0.25s ease-in-out;
     }
     &:hover{
