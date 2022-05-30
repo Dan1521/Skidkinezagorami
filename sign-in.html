@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> -->
   <title>Авторизация</title>
 </head>
-<body class="no-scroll">
+<body>
   <div class="page">
     <div class="wrapper">
       <header class="header">
@@ -19,14 +19,12 @@
               <button class="btn-reset header__burger" type="button" data-menu-btn="nav">
                 <span class="header__burger-line"></span>
               </button>
-              <a class="header__logo" href="#">
-                <img src="./images/logo.svg" alt="Skidkinezagorami">
-              </a>
+              <a class="header__logo" href="#">Skidkinezagorami</a>
             </div>
             <div class="header__col">
               <a class="avtoriz" href="">
                 <svg class="avtoriz__icon">
-                  <use xlink:href="./images/sprite.svg#user"></use>
+                  <use xlink:href="./assets/images/sprite.svg#user"></use>
                 </svg>
                 <span>Регистрация</span>
                 <b>/</b>
@@ -35,23 +33,26 @@
               <ul class="header__social social">
                 <li class="social__item">
                   <a class="social__link" href="#">
-                    <svg width="34" height="31" viewBox="0 0 34 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="social__link-icon social__link-icon--telegram" viewBox="0 0 34 31" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M34 1.09818L28.6219 29.7094C28.6219 29.7094 27.8694 31.6932 25.8022 30.7418L13.3935 20.7018L13.3359 20.6722C15.0121 19.084 28.0096 6.75192 28.5776 6.19293C29.457 5.32719 28.9111 4.8118 27.89 5.46577L8.6911 18.3319L1.2842 15.702C1.2842 15.702 0.118566 15.2644 0.0064293 14.3131C-0.107183 13.3601 1.32256 12.8448 1.32256 12.8448L31.5182 0.344552C31.5182 0.344552 34 -0.806128 34 1.09818V1.09818Z" />
+                        d="M34 1.09818L28.6219 29.7094C28.6219 29.7094 27.8694 31.6932 25.8022 30.7418L13.3935 20.7018L13.3359 20.6722C15.0121 19.084 28.0096 6.75192 28.5776 6.19293C29.457 5.32719 28.9111 4.8118 27.89 5.46577L8.6911 18.3319L1.2842 15.702C1.2842 15.702 0.118566 15.2644 0.0064293 14.3131C-0.107183 13.3601 1.32256 12.8448 1.32256 12.8448L31.5182 0.344552C31.5182 0.344552 34 -0.806128 34 1.09818Z" />
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
                   <a class="social__link" href="#">
-                    <svg width="39" height="25" viewBox="0 0 39 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="social__link-icon social__link-icon--vk" viewBox="0 0 39 25" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M21.2417 25C7.91693 25 0.316677 15.6156 0 0H6.67458C6.89382 11.4615 11.8145 16.3163 15.7121 17.3173V0H21.9969V9.88488C25.8457 9.45946 29.8894 4.95495 31.2536 0H37.5384C37.0244 2.56978 35.9997 5.00295 34.5285 7.14732C33.0573 9.29169 31.1712 11.1011 28.9881 12.4625C31.4249 13.7063 33.5772 15.467 35.303 17.6281C37.0288 19.7893 38.2888 22.3018 39 25H32.0818C31.4434 22.6564 30.1459 20.5586 28.3519 18.9693C26.5579 17.3801 24.3472 16.3701 21.9969 16.0661V25H21.2417V25Z" />
+                        d="M21.2417 25C7.91693 25 0.316677 15.6156 0 0H6.67458C6.89382 11.4615 11.8145 16.3163 15.7121 17.3173V0H21.9969V9.88488C25.8457 9.45946 29.8894 4.95495 31.2536 0H37.5384C37.0244 2.56978 35.9997 5.00295 34.5285 7.14732C33.0573 9.29169 31.1712 11.1011 28.9881 12.4625C31.4249 13.7063 33.5772 15.467 35.303 17.6281C37.0288 19.7893 38.2888 22.3018 39 25H32.0818C31.4434 22.6564 30.1459 20.5586 28.3519 18.9693C26.5579 17.3801 24.3472 16.3701 21.9969 16.0661V25H21.2417Z" />
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
                   <a class="social__link" href="#">
-                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="social__link-icon social__link-icon--instagram" viewBox="0 0 31 31" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M15.5 2.80121C19.6084 2.80121 20.1687 2.80121 21.8494 2.80121C23.3434 2.80121 24.0904 3.1747 24.6506 3.36145C25.3976 3.73494 25.9578 3.92169 26.5181 4.48193C27.0783 5.04217 27.4518 5.60241 27.6386 6.3494C27.8253 6.90964 28.012 7.65663 28.1988 9.1506C28.1988 10.8313 28.1988 11.2048 28.1988 15.5C28.1988 19.7952 28.1988 20.1687 28.1988 21.8494C28.1988 23.3434 27.8253 24.0904 27.6386 24.6506C27.2651 25.3976 27.0783 25.9578 26.5181 26.5181C25.9578 27.0783 25.3976 27.4518 24.6506 27.6386C24.0904 27.8253 23.3434 28.012 21.8494 28.1988C20.1687 28.1988 19.7952 28.1988 15.5 28.1988C11.2048 28.1988 10.8313 28.1988 9.1506 28.1988C7.65663 28.1988 6.90964 27.8253 6.3494 27.6386C5.60241 27.2651 5.04217 27.0783 4.48193 26.5181C3.92169 25.9578 3.54819 25.3976 3.36145 24.6506C3.1747 24.0904 2.98795 23.3434 2.80121 21.8494C2.80121 20.1687 2.80121 19.7952 2.80121 15.5C2.80121 11.2048 2.80121 10.8313 2.80121 9.1506C2.80121 7.65663 3.1747 6.90964 3.36145 6.3494C3.73494 5.60241 3.92169 5.04217 4.48193 4.48193C5.04217 3.92169 5.60241 3.54819 6.3494 3.36145C6.90964 3.1747 7.65663 2.98795 9.1506 2.80121C10.8313 2.80121 11.3916 2.80121 15.5 2.80121ZM15.5 0C11.2048 0 10.8313 0 9.1506 0C7.46988 0 6.3494 0.373495 5.41566 0.746989C4.48193 1.12048 3.54819 1.68072 2.61446 2.61446C1.68072 3.54819 1.30723 4.29518 0.746989 5.41566C0.373495 6.3494 0.186747 7.46988 0 9.1506C0 10.8313 0 11.3916 0 15.5C0 19.7952 0 20.1687 0 21.8494C0 23.5301 0.373495 24.6506 0.746989 25.5843C1.12048 26.5181 1.68072 27.4518 2.61446 28.3855C3.54819 29.3193 4.29518 29.6928 5.41566 30.253C6.3494 30.6265 7.46988 30.8133 9.1506 31C10.8313 31 11.3916 31 15.5 31C19.6084 31 20.1687 31 21.8494 31C23.5301 31 24.6506 30.6265 25.5843 30.253C26.5181 29.8795 27.4518 29.3193 28.3855 28.3855C29.3193 27.4518 29.6928 26.7048 30.253 25.5843C30.6265 24.6506 30.8133 23.5301 31 21.8494C31 20.1687 31 19.6084 31 15.5C31 11.3916 31 10.8313 31 9.1506C31 7.46988 30.6265 6.3494 30.253 5.41566C29.8795 4.48193 29.3193 3.54819 28.3855 2.61446C27.4518 1.68072 26.7048 1.30723 25.5843 0.746989C24.6506 0.373495 23.5301 0.186747 21.8494 0C20.1687 0 19.7952 0 15.5 0Z" />
                       <path
@@ -68,61 +69,56 @@
             <div class="search">
               <input class="search__input" type="text" placeholder="Поиск промокода">
             </div>
+      
             <button class="btn-reset suppler" data-menu-btn="category">
               <svg class="suppler__arrow">
-                <use xlink:href="./images/sprite.svg#arrow"></use>
+                <use xlink:href="./assets/images/sprite.svg#arrow"></use>
               </svg>
               <span>Поставщик</span>
             </button>
           </div>
           <div class="header__row">
             <div class="category">
-              <img class="category__img" src="./images/category-img.png" alt="">
+              <img class="category__img" src="./assets/images/category-img.png" alt="">
               <div class="category__items">
-                <div class="category__row">
-                  <ul class="category__list">
-                    <li class="category__item">
-                      <a href="">Доставка и продукты</a>
-                    </li>
-                    <li class="category__item">
-                      <a href="">Бонусы от банков</a>
-                    </li>
-                    <li class="category__item">
-                      <a href="">Маркетплейс</a>
-                    </li>
-                    <li class="category__item">
-                      <a href="">Жилье</a>
-                    </li>
-                    <li class="category__item">
-                      <a href="">Косметика и парфюмерия</a>
-                    </li>
-                    <li class="category__item">
-                      <a href="">Одежда и обувь</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="category__row">
-                  <ul class="category__list">
-                    <li class="category__item">
-                      <a href="">Такси</a>
-                    </li>
-                    <li class="category__item">
-                      <a href="">Аптеки и здоровье</a>
-                    </li>
-                    <li class="category__item">
-                      <a href="">Страхование</a>
-                    </li>
-                    <li class="category__item">
-                      <a href="">Каршеринг</a>
-                    </li>
-                    <li class="category__item">
-                      <a href="">Онлайн сервисы и подписки</a>
-                    </li>
-                    <li class="category__item">
-                      <a href="">Услуги</a>
-                    </li>
-                  </ul>
-                </div>
+                <ul class="category__list">
+                  <li class="category__item">
+                    <a href="">Доставка и продукты</a>
+                  </li>
+                  <li class="category__item">
+                    <a href="">Бонусы от банков</a>
+                  </li>
+                  <li class="category__item">
+                    <a href="">Маркетплейс</a>
+                  </li>
+                  <li class="category__item">
+                    <a href="">Жилье</a>
+                  </li>
+                  <li class="category__item">
+                    <a href="">Косметика и парфюмерия</a>
+                  </li>
+                  <li class="category__item">
+                    <a href="">Одежда и обувь</a>
+                  </li>
+                  <li class="category__item">
+                    <a href="">Такси</a>
+                  </li>
+                  <li class="category__item">
+                    <a href="">Аптеки и здоровье</a>
+                  </li>
+                  <li class="category__item">
+                    <a href="">Страхование</a>
+                  </li>
+                  <li class="category__item">
+                    <a href="">Каршеринг</a>
+                  </li>
+                  <li class="category__item">
+                    <a href="">Онлайн сервисы и подписки</a>
+                  </li>
+                  <li class="category__item">
+                    <a href="">Услуги</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -448,7 +444,7 @@
                 <li class="social-sign-in__item">
                   <a class="social-sign-in__link" href="#">
                     <svg class="social-sign-in__link-icon">
-                      <use xlink:href="./images/sprite.svg#facebook"></use>
+                      <use xlink:href="./assets/images/sprite.svg#facebook"></use>
                     </svg>
                     <span>Войти через Facebook</span>
                   </a>
@@ -456,7 +452,7 @@
                 <li class="social-sign-in__item">
                   <a class="social-sign-in__link" href="#">
                     <svg class="social-sign-in__link-icon">
-                      <use xlink:href="./images/sprite.svg#google"></use>
+                      <use xlink:href="./assets/images/sprite.svg#google"></use>
                     </svg>
                     <span>Войти через Google</span>
                   </a>
@@ -464,7 +460,7 @@
                 <li class="social-sign-in__item">
                   <a class="social-sign-in__link" href="#">
                     <svg class="social-sign-in__link-icon">
-                      <use xlink:href="./images/sprite.svg#apple"></use>
+                      <use xlink:href="./assets/images/sprite.svg#apple"></use>
                     </svg>
                     <span>Войти через Apple</span>
                   </a>
@@ -488,7 +484,7 @@
                     <input class="form-sign-in__checkbox-input" type="checkbox" id="checkbox">
                     <label class="form-sign-in__checkbox-label" for="checkbox">
                       <svg class="form-sign-in__checkbox-icon">
-                        <use xlink:href="./images/sprite.svg#check"></use>
+                        <use xlink:href="./assets/images/sprite.svg#check"></use>
                       </svg>
                       <span class="form-sign-in__checkbox-text">Запомнить меня на этом устройстве</span>
                     </label>  
@@ -503,6 +499,8 @@
           </div>
         </div>
       </div> <!-- main -->
-  <script src="./js/main.js"></script>
+    </div>
+  </div>  
+  <script src="./assets/scripts/main.js"></script>
 </body>
 </html>

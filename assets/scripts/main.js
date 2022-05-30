@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const modals = document.querySelectorAll('.modal');
   const menuBtn = document.querySelectorAll('[data-menu-btn]');
   const menus = document.querySelectorAll('[data-menu]');
+  const subMenu = document.querySelectorAll('.menu__item');
+
 
   cardBtns.forEach((element) => {
     element.addEventListener('click', (event) => {
@@ -12,11 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
       modals.forEach((modal) => {
         let modalClass = modal.dataset.modal;
-          if (modalClass == selfClass) {
-            modal.classList.add('modal--open');
-          }
+        if (modalClass == selfClass) {
+          modal.classList.add('modal--open');
+        }
       })
-      
+
     })
   })
   modals.forEach((modal) => {
@@ -52,11 +54,25 @@ document.addEventListener('DOMContentLoaded', () => {
             menu.classList.remove('menu--open');
             self.classList.remove('is-active');
             menu.style.maxHeight = 0;
-          } 
+          }
         }
       });
     })
-    
+
+  })
+
+  subMenu.forEach((elem) => {
+    elem.addEventListener('click', (e) => {
+      let controle = e.target.classList.contains('menu__title');
+      let menu = elem.querySelector('.menu-list'); // Меню текушей категории
+
+      if (controle) {
+        console.log(menu)
+        menu.classList.add('menu-list--open');
+      }
+      
+
+    })
   })
 
   let btnClipboard = new ClipboardJS('.btn-clipboard', {  //инициализация кнопки копирования промокодов
@@ -69,7 +85,14 @@ document.addEventListener('DOMContentLoaded', () => {
     alert("Текст скопирован:" + e.text)
   });
 
+  // fetch("https://sheet.best/api/sheets/36bb4579-86cd-4347-a5e9-9f5ab687b810")
+  //   .then((response) => response.json())
+  //   .then((data) => {
+  //     console.log(data)
+  //   })
+
 
 
 
 });
+
