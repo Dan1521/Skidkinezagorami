@@ -64,14 +64,15 @@ document.addEventListener('DOMContentLoaded', () => {
   subMenu.forEach((elem) => {
     elem.addEventListener('click', (e) => {
       let controle = e.target.classList.contains('menu__title');
-      let menu = elem.querySelector('.menu-list'); // Меню текушей категории
-
-      if (controle) {
-        console.log(menu)
-        menu.classList.add('menu-list--open');
-      }
+      let menu = elem.querySelector('.menu__item-list'); // Меню текушей категории
+      let menuBtn = e.target.classList.contains('menu__item-arrow');
       
-
+      if (controle) {
+        menu.classList.add('is--open');
+      }
+      if (menuBtn) {
+        menu.classList.remove('is--open');
+      }
     })
   })
 

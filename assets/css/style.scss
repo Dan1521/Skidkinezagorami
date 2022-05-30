@@ -907,19 +907,39 @@ body {
   }
 
 }
+.menu__item-arrow{
+  display: none;
+  @media (max-width: 576px) {
+    display: inline-block;
+  }
+}
 
-.menu-list {
+.menu__item-arrow{
+  padding: 5px 5px 3px 4px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: var(--color-green-5);
+}
+.menu__item-arrow-icon{
+  width: 20px;
+  height: 15px;
+  transform: rotate(90deg);
+  pointer-events: none;
+}
+
+.menu__item-list {
   padding-left: 10px;
   @media (max-width: 576px){
     width: 100%;
     height: 100%;
     position: absolute;
+    z-index: 4;
     top: 0;
     left: 0;
     background-color: var(--color-white);
     transform: translateX(110%);
     transition: all 0.3s ease-in-out;
-    &.menu-list--open{
+    &.is--open{
       transform: translateX(0);
     }
   }
