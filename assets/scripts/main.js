@@ -56,6 +56,11 @@ document.addEventListener('DOMContentLoaded', () => {
             menu.style.maxHeight = 0;
           }
         }
+
+        subMenu.forEach((elem) => {
+          let menu = elem.querySelector('.menu__item-list');
+          menu.classList.remove('is--open');
+        })
       });
     })
 
