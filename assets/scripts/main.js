@@ -18,15 +18,18 @@ document.addEventListener('DOMContentLoaded', () => {
           modal.classList.add('modal--open');
         }
       })
-
+      menus.forEach((menu) => {
+        menu.classList.remove('menu--open')
+      })
     })
   })
+  
   modals.forEach((modal) => {
     modal.addEventListener('click', (event) => {
-
       if (event.target.classList.contains('modal__inner') || event.target.classList.contains('modal__close')) {
         modal.classList.remove('modal--open')
       }
+      
     })
   })
 
@@ -61,6 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
           let menu = elem.querySelector('.menu__item-list');
           menu.classList.remove('is--open');
         })
+        
       });
     })
 
